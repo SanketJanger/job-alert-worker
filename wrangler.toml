@@ -1,0 +1,11 @@
+name = "job-alert-worker"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+[triggers]
+crons = ["0 * * * *", "0 12 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "job-alert-worker-db"
+database_id = "29d895f7-bfc7-4757-8b43-15fd42e1e4bb"
